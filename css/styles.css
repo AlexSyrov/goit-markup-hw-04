@@ -140,22 +140,7 @@ a {
   margin-left: auto;
   align-items: center;
 }
-.site-nav-ad::before {
-  content: '';
-  display: block;
-  height: 12px;
-  width: 16px;
-  background-image: url(../images/envelope.svg);
-  margin-right: 10px;
-}
-.site-nav-ad :nth-child(2)::before {
-  content: '';
-  display: inline-block;
-  height: 15px;
-  width: 10px;
-  background-image: url(../images/smartphone.svg);
-  margin-right: 10px;
-}
+
 .site-nav > .item > .link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -179,6 +164,21 @@ a {
   letter-spacing: 0.02em;
 }
 
+.link {
+  padding: 0;
+  border: none;
+}
+
+.e-t-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.link:hover,
+.link:focus {
+  fill: var(--accent-color);
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -304,27 +304,21 @@ a {
 .feature-item:last-child {
   margin-right: 0;
 }
-.feature-item::before {
-  display: block;
-  content: '';
+
+.features-icon {
+  width: 70px;
+  height: 70px;
+  margin: 25px 100px;
+}
+
+.b-g-c-features {
+  width: 270px;
   height: 120px;
   background-color: var(--team-background-color);
-  background-repeat: no-repeat;
-  background-position: center;
+  border-radius: 4px;
   margin-bottom: 30px;
 }
-.icon-ant::before {
-  background-image: url(../images/feature/antenna_1.png);
-}
-.icon-clock::before {
-  background-image: url(../images/feature/clock_1.png);
-}
-.icon-di::before {
-  background-image: url(../images/feature/diagram_1.png);
-}
-.icon-ast::before {
-  background-image: url(../images/feature/astronaut_1.png);
-}
+
 .features-title {
   color: var(--title-text-color);
   margin-top: 0px;
@@ -413,7 +407,7 @@ a {
   font-size: 16px;
   line-height: 1.19;
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .info-container {
   background-color: var(--white-color);
@@ -431,13 +425,27 @@ a {
   margin-bottom: 16px;
 }
 
-.socialnet-link {
-  color: var(--icon-color);
+.socialnets {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--white-color);
 }
 
-.socialnet-link:hover,
-.socialnet-link:focus {
-  color: var(--accent-color);
+.socialnets:hover {
+  background-color: var(--accent-color);
+}
+
+.socialnets-icons {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  fill: var(--main-text-color);
+}
+
+.socialnets-icons:hover {
+  fill: var(--white-color);
 }
 
 /* clients */
@@ -563,6 +571,12 @@ a {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+}
+
+.project:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .project:nth-child(3n) {
   margin-right: 0;
@@ -598,6 +612,13 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.projects-names {
+  margin-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .f-heading {
   margin-top: 0;
   margin-bottom: 0;
