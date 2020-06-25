@@ -79,7 +79,7 @@ a {
 }
 .sl-flex {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .clients-flex {
   display: flex;
@@ -434,11 +434,15 @@ a {
   height: 44px;
   border-radius: 50%;
   background-color: var(--white-color);
+  fill: var(--icon-color);
 }
-.socialnets:hover {
+
+.socialnets:hover,
+.socialnets:focus {
   background-color: var(--accent-color);
 }
-.socialnets:hover .socialnets-icons {
+.socialnets:hover .socialnets-icons,
+.socialnets:focus .socialnets-icons {
   fill: var(--white-color);
 }
 
@@ -448,22 +452,6 @@ a {
   padding-top: 94px;
 }
 .clients-site-link {
-  color: var(--icon-color);
-}
-.clients-site-link:hover,
-.clients-site-link:focus {
-  color: var(--accent-color);
-}
-
-.client-item {
-  margin-right: 30px;
-  height: 90px;
-  display: inline-block;
-}
-
-.clients-icon {
-}
-.clients-border {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -471,10 +459,19 @@ a {
   border-radius: 4px;
   width: 170px;
   height: 90px;
+  background-color: var(--white-color);
+  fill: var(--icon-color);
+}
+.clients-site-link:hover,
+.clients-site-link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
-.clients-border:hover {
-  fill: var(--accent-color);
+.client-item {
+  margin-right: 30px;
+  height: 90px;
+  display: inline-block;
 }
 
 .client-item:last-child {
@@ -537,12 +534,21 @@ a {
   margin-bottom: 20px;
 }
 .f-socialnet-link {
-  color: rgba(255, 255, 255, 10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 10%);
+  fill: var(--white-color);
 }
+
 .f-socialnet-link:hover,
 .f-socialnet-link:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
 }
+
 .subscribe {
   width: calc((100% - 60px) / 2);
 }
