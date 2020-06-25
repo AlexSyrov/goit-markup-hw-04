@@ -220,7 +220,6 @@ a {
 
 .hero-title {
   width: 696px;
-  height: ;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -415,6 +414,7 @@ a {
   padding-top: 30px;
   padding-bottom: 24px;
   width: 270px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .postposition {
@@ -422,30 +422,24 @@ a {
   font-size: 16px;
   line-height: 1.19;
   margin-top: 0px;
-  margin-bottom: 16px;
+  margin-bottom: 28px;
 }
 
 .socialnets {
   display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: var(--white-color);
-}
-
-.socialnets:hover {
-  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
 }
 
 .socialnets-icons {
-  width: 20px;
-  height: 20px;
-  margin-top: 10px;
-  fill: var(--main-text-color);
+  margin: 12px;
+  border: none;
 }
 
-.socialnets-icons:hover {
+.socialnets:hover {
   fill: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 /* clients */
