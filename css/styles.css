@@ -174,6 +174,7 @@ a {
   width: 16px;
   height: 12px;
   margin-right: 5px;
+  color: var(--main-text-color);
 }
 
 .link:hover,
@@ -227,8 +228,8 @@ a {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 200px;
-  margin-bottom: 30px;
+  margin-top: 15%;
+  margin-bottom: 2%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -270,6 +271,8 @@ a {
 .button-primary:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 .button-secondary {
   color: var(--white-color);
@@ -312,7 +315,6 @@ a {
 }
 
 .b-g-c-features {
-  width: 270px;
   height: 120px;
   background-color: var(--team-background-color);
   border-radius: 4px;
@@ -345,6 +347,8 @@ a {
 
 .wawd-img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .img-wawd {
@@ -377,6 +381,8 @@ a {
 }
 .workers-photo {
   display: block;
+  max-width: 100%;
+  height: auto;
 
   border-radius: 0px 0px 4px 4px;
 }
@@ -658,6 +664,8 @@ a {
 .f-img {
   margin-bottom: 20px;
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .f-snl {
   margin-right: 10px;
