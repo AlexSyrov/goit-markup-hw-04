@@ -349,7 +349,7 @@ a {
 
 .img-wawd {
   margin-left: 30px;
-  width: 370px;
+  width: calc((100% - 30px * 2) / 3);
 }
 
 .wawd-item {
@@ -366,9 +366,6 @@ a {
   text-transform: uppercase;
 }
 
-.wawd-box {
-  width: calc((100% - 30px * 2) / 3);
-}
 /* Team */
 .team-box {
   padding-top: 94px;
