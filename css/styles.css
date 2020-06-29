@@ -202,7 +202,11 @@ a {
 }
 
 /* hero title */
+
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -219,6 +223,11 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
+.heros {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
 
 .hero-title {
   color: var(--white-color);
@@ -227,9 +236,15 @@ a {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 696px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  display: block;
 }
 
 .list {
