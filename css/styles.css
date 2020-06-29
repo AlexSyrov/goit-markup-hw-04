@@ -221,19 +221,15 @@ a {
 }
 
 .hero-title {
-  width: 696px;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 15%;
-  margin-bottom: 2%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .list {
